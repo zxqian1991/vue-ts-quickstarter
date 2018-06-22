@@ -1,0 +1,3 @@
+[submodule "src/vue-ts-components"]
+	path = src/vue-ts-components
+	url = https://github.com/zxqian1991/qzx-vue-ts-components.git
