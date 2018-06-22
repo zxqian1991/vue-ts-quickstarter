@@ -1,3 +1,15 @@
 [submodule "src/vue-ts-components"]
 	path = src/vue-ts-components
 	url = https://github.com/zxqian1991/qzx-vue-ts-components.git
+[submodule "src/vue-ts-helpers"]
+	path = src/vue-ts-helpers
+	url = https://github.com/zxqian1991/qzx-vue-ts-helpers.git
+[submodule "src/vue-ts-directives"]
+	path = src/vue-ts-directives
+	url = https://github.com/zxqian1991/qzx-vue-ts-directives.git
+[submodule "src/vue-ts-services"]
+	path = src/vue-ts-services
+	url = https://github.com/zxqian1991/qzx-vue-ts-services.git
+[submodule "src/vue-ts-filters"]
+	path = src/vue-ts-filters
+	url = https://github.com/zxqian1991/qzx-vue-ts-filters.git
