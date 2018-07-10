@@ -64,7 +64,6 @@ app.use(devMiddleware);
 // enable hot-reload and state-preserving
 // compilation error display
 app.use(hotMiddleware);
-
 // serve pure static assets
 const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory);
 app.use(staticPath, express.static('./static'));
@@ -85,7 +84,6 @@ devMiddleware.waitUntilValid(() => {
     }
     _resolve();
 });
-
 const server = app.listen(port);
 
 module.exports = {
