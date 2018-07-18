@@ -21,6 +21,6 @@
         "jsx": "preserve",
         "jsxFactory": "h"
     },
-    "compileOnSave": true,
+    "compileOnSave": false,
     "buildOnSave": false
 }

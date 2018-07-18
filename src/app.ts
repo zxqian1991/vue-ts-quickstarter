@@ -1,6 +1,6 @@
 
 import Vue from 'vue'
-import { App } from './pages/main/index'
+import { App } from './pages/mk/index'
 
 new Vue({
   el: '#app',

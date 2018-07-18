@@ -13,3 +13,6 @@
 [submodule "src/vue-ts-filters"]
 	path = src/vue-ts-filters
 	url = https://github.com/zxqian1991/qzx-vue-ts-filters.git
+[submodule "src/vue-ts-ioc"]
+	path = src/vue-ts-ioc
+	url = https://github.com/zxqian1991/qzx-ioc.git
