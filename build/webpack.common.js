@@ -3,6 +3,7 @@ const {
     assetsPath
 } = require('./util/helper');
 const path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     entry: {
         app: [
@@ -52,15 +53,21 @@ module.exports = {
             }, {
                 test: /\.css$/,
                 enforce: 'post',
-                use: ['style-loader', 'css-loader']
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: "css-loader"
+                })
             }, {
                 test: /\.scss$/,
                 enforce: 'post',
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                use: ExtractTextPlugin.extract({
+                    fallback: 'css-loader',
+                    use: 'sass-loader'
+                })
             }, {
                 test: /\.less$/,
                 enforce: 'post',
-                use: ['style-loader', 'css-loader', 'less-loader'],
+                use: ExtractTextPlugin.extract(['css-loader', 'less-loader']),
 
             }, {
                 test: /\.html$/,

@@ -1,3 +1,5 @@
+import { Injectable, Ioc } from 'qzx-ioc';
+import { ColorConfig } from './color';
 export default [
     {
         path: '/',

@@ -4,6 +4,8 @@ const config = require('./config');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const utils = require('./util');
 Object.keys(commonConfig.entry).forEach(function (name) {
     commonConfig.entry[name] = ['./build/dev-client'].concat(commonConfig.entry[name]);
 });
@@ -21,6 +23,9 @@ module.exports = merge(commonConfig, {
             template: 'src/index.html',
             inject: true
         }),
-        new FriendlyErrorsPlugin()
+        new FriendlyErrorsPlugin(),
+        new ExtractTextPlugin({
+            filename: utils.assetsPath('css/[name].[contenthash].css')
+        }),
     ]
 });
