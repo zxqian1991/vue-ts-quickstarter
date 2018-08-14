@@ -1,6 +1,6 @@
-import { Injectable } from "../../../../node_modules/qzx-ioc";
+import { Injectable } from "qzx-ioc";
 import { BasicDynamicService, DynamicInstance } from '../basic/interfaces/dynamic';
-import Vue, { VueConstructor } from '../../../../node_modules/vue';
+import Vue, { VueConstructor } from 'vue';
 
 @Injectable
 export class VueDynamicService implements BasicDynamicService{

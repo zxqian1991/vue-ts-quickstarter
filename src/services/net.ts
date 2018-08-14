@@ -1,11 +1,13 @@
+import { ConstantConfig } from './../config/constants/index';
 import { Injectable } from "qzx-ioc";
 import axios, { AxiosResponse } from 'axios';
 import { NetStatusObject } from '../interfaces/NetStatusObject';
-import { TypeService } from './type';
+import { TypeHelper } from '../helpers/type';
 @Injectable
 export class NetService {
     constructor(
-        private $type: TypeService
+        private $type: TypeHelper,
+        private $constant: ConstantConfig
     ) {
 
     }
@@ -45,9 +47,6 @@ export class NetService {
         }).then((data: K) => {
             return data;
         })
-    }
-    async getUrl(url: string) {
-
     }
     async get<T, K>({
         url,

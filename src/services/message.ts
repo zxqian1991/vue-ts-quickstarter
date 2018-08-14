@@ -1,10 +1,8 @@
-import { Injectable } from "../../node_modules/qzx-ioc";
-import { ColorService } from './colors';
+import { Injectable } from "qzx-ioc";
 
 @Injectable
 export class MessageService {
     constructor(
-        private $colorSvc: ColorService
     ) {
 
     }

@@ -1,10 +1,8 @@
 import { Injectable } from "qzx-ioc";
-import { ColorService } from './colors';
 
 @Injectable
 export class TipsService {
     constructor(
-        private $colorSvc: ColorService
     ) {
 
     }

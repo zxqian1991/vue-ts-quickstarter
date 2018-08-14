@@ -1,7 +1,7 @@
 import { Injectable } from "qzx-ioc";
 
 @Injectable
-export class TypeService {
+export class TypeHelper {
     constructor() {
 
     }
@@ -16,5 +16,8 @@ export class TypeService {
     }
     isArray(val): boolean {
         return Array.isArray(val);
+    }
+    isArrayOrObject(val): boolean {
+        return typeof val === 'object';
     }
 }

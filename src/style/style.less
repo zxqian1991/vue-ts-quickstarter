@@ -1,0 +1,80 @@
+@import './custom/color';
+@import './func/border';
+@import './func/pos';
+body {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: @color-content;
+    background-color: @color-bg;
+    -webkit-font-smoothing: antialiased;
+}
+.border-dashed {
+    .border-dashed();
+}
+.border-solid {
+    .border-solid();
+}
+.border-dashed {
+    .border-dashed();
+}
+.boder-width-1 {
+    .border-width(1px)
+}
+.border-width-0 {
+    .border-width(0);
+}
+.boder-width-2 {
+    .border-width(2px);
+}
+.color-white {
+    color: @color-white;
+}
+.color-black {
+    color: @color-black;
+}
+.color-primary {
+    color: @color-primary;
+}
+.color-info {
+    color: @color-info;
+}
+.color-warning {
+    color: @color-warning
+}
+.color-error {
+    color: @color-error;
+}
+.color-success {
+    color: @color-success;
+}
+.color-title {
+    color: @color-title;
+}
+.pos-absolute {
+    position: absolute;
+}
+.pos-relative {
+    position: relative;
+}
+.pos-fixed {
+    position: fixed;
+}
+.pos-left-0 {
+    .left(0);
+}
+.pos-right-0 {
+    .right(0);
+}
+.pos-top-0 {
+    .right(0);
+}
+.pos-bottom-0 {
+    .bottom(0);
+}
+.pos-0 {
+    .left(0);
+    .right(0);
+    .top(0);
+    .bottom(0);
+}
